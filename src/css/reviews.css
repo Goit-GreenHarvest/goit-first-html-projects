@@ -1,0 +1,128 @@
+.reviews {
+  padding: 80px 0px;
+  background-color: var(--white);
+  margin: 0 auto;
+  font-family: 'Inter', sans-serif;
+  color: var(--black);
+}
+
+.reviews-header {
+  margin-bottom: 40px;
+}
+
+.reviews-header-title {
+  max-width: 553px;
+  margin-bottom: 20px;
+  font-size: 48px;
+  line-height: 1.1;
+  font-weight: 600;
+}
+
+.reviews-title-customers {
+  color: var(--primary-color);
+}
+
+.reviews-header p {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+  color: var(--black);
+}
+
+.reviews-list {
+  display: flex;
+  gap: 24px;
+  width: 100%;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  padding-bottom: 27px;
+}
+
+.review-card {
+  padding: 20px 16px;
+  border: 1px solid #d4bfc4;
+  border-radius: 24px;
+  text-align: center;
+  background-color: var(--white);
+  flex: 0 0 335px;
+  scroll-snap-align: start;
+}
+
+.reviews-list::-webkit-scrollbar {
+  height: 9px;
+}
+
+.reviews-list::-webkit-scrollbar-track {
+  background-color: #f1f1f1;
+  border-radius: 10px;
+}
+
+.reviews-list::-webkit-scrollbar-thumb {
+  background-color: #718e45;
+  border-radius: 10px;
+}
+
+.reviews-list::-webkit-scrollbar-thumb:hover {
+  background-color: #576f35;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.reviews-list::-webkit-scrollbar-thumb:active {
+  background-color: #3a4a23;
+}
+
+.review-card picture {
+  display: inline-block;
+  margin-bottom: 24px;
+}
+
+.review-card img {
+  border-radius: 50%;
+  display: block;
+}
+
+.review-card h3 {
+  margin: 0 0 8px;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.review-card p {
+  margin: 0;
+  font-size: 16px;
+  line-height: 1.4;
+  color: var(--details-grey);
+}
+
+@media (min-width: 768px) {
+  .reviews-title-first-line {
+    display: block;
+    white-space: nowrap;
+  }
+
+  .reviews-title-second-line {
+    display: block;
+  }
+
+  .reviews {
+    padding: 100px 32px;
+  }
+
+  .reviews-header {
+    margin-bottom: 52px;
+  }
+
+  .reviews-header h2 {
+    margin-bottom: 24px;
+  }
+
+  .reviews-header p {
+    max-width: 553px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .reviews {
+    padding: 100px;
+  }
+}
