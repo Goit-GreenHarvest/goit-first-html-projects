@@ -1,128 +1,407 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vanilla-app-template/favicon.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vanilla App Template</title>
-    <script type="module" crossorigin src="/vanilla-app-template/index.js"></script>
-    <link rel="stylesheet" crossorigin href="/vanilla-app-template/assets/styles-DvPDDfy5.css">
-  </head>
-  <body>
-    <header class="header">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet" />
+  <title>GREEN-HARVEST</title>
+  <link rel="stylesheet" crossorigin href="/vanilla-app-template/assets/index-DL4Qd09m.css">
+</head>
+
+<body>
+  <header class="header">
   <div class="container">
-    <nav class="nav">
-      <a class="nav-logo" href="./index.html" aria-label="Site logo">
-        <svg class="nav-logo-icon" width="100" height="30">
-          <use href="/vanilla-app-template/assets/sprite-E8vg0sBb.svg#logo"></use>
+    <div class="header-container">
+      <div class="header-logo">
+        <svg class="header-logo-panel">
+          <use href="../img/favicon.svg#icon-panel"></use>
         </svg>
-      </a>
-      <ul class="nav-list">
-        <li class="nav-item">
-          <a class="nav-link {=$highlight-act}" href="./page-2.html">Page 2</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link {=$highlight-curr}" href="./page-3.html">Page 3</a>
-        </li>
-      </ul>
-    </nav>
+        <svg class="header-logo-text">
+          <use class="mob-logo" href="../img/favicon.svg#icon-green-harvest-mob"></use>
+          <use class="desk-logo" href="../img/favicon.svg#icon-green-harvest-desk"></use>
+        </svg>
+      </div>
+
+      <div class="header-button-group">
+        <nav>
+          <ul class="header-nav-group">
+            <li>
+              <a href="#how-it-works" class="header-nav-buttons">How It Works</a>
+            </li>
+            <li>
+              <a href="#vegetables" class="header-nav-buttons">Vegetables</a>
+            </li>
+            <li>
+              <a href="#reviews" class="header-nav-buttons">Reviews</a>
+            </li>
+          </ul>
+        </nav>
+        <a class="header-primary-button" href="#">SHOP NOW</a>
+      </div>
+
+      <input type="checkbox" id="menu-toggle" class="menu-checkbox" hidden />
+
+      <label for="menu-toggle" class="burger-open">
+        <svg class="burger-icon">
+          <use href="/vanilla-app-template/assets/favicon-DJes9ad5.svg#icon-hamburger"></use>
+        </svg>
+      </label>
+
+      <div class="mobile-menu-wrapper">
+        <div class="mobile-menu-content">
+          <label for="menu-toggle" class="close-label">
+            <svg class="close-icon" width="40" height="40">
+              <use href="/vanilla-app-template/assets/favicon-DJes9ad5.svg#icon-close"></use>
+            </svg>
+          </label>
+          <nav class="mobile-menu-nav">
+            <ul class="mobile-menu-list">
+              <li class="mobile-menu-item active">
+                <a href="#how-it-works" class="mobile-menu-link">How It Works</a>
+              </li>
+              <li class="mobile-menu-item">
+                <a href="#vegetables" class="mobile-menu-link">Vegetables</a>
+              </li>
+              <li class="mobile-menu-item">
+                <a href="#reviews" class="mobile-menu-link">Reviews</a>
+              </li>
+            </ul>
+          </nav>
+          <button type="button" class="menu-shop-button">SHOP NOW</button>
+        </div>
+      </div>
+    </div>
   </div>
 </header>
+  <main>
+    <section class="hero-section">
+    <div class="container hero-wrapper">
+        <div class="hero-content">
 
-
-    <main>
-      <!-- Loads the specified .html file -->
-      <section class="vite-promo">
-  <div class="container">
-    <div class="vite-promo-thumb">
-      <a
-        class="vite-promo-link"
-        href="https://vitejs.dev/"
-        target="_blank"
-        rel="noopener noreferrer"
-        aria-label="Link to Vite official website"
-        title="Vite.js  build tool"
-      >
-        <!-- Path to images as from index.html file -->
-        <img
-          class="pic"
-          src="/vanilla-app-template/assets/vite-logo-9o_aqrTe.png"
-          alt="Vite logo"
-          width="640"
-          height="640"
-        />
-      </a>
+            <h1 class="hero-title">
+                ORGANIC VEGETABLES
+                TO YOUR DIET
+                TODAY!
+            </h1>
+            <p class="hero-text">
+                <span>Our expertly curated vegetable baskets are made with the</span>
+                <span>freshest, highest quality vegetables available. Fresh Harvest Box</span>
+                <span>has got you covered. Fresh, high-quality vegetables in expertly</span>
+                <span>curated vegetable baskets delivered to you.</span>
+            </p>
+        </div>
+        <div class="hero-basket-image">
+        </div>
     </div>
-    <h1 class="main-title">
-      <span class="main-title-gradient">Vite</span>
-      Template by
-      <a
-        class="main-title-link"
-        href="https://github.com/goitacademy/vanilla-app-template"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        GoIT
-      </a>
-    </h1>
-  </div>
 </section>
 
-      <article class="badges">
+<section class="hero-steps-section">
+    <div class="container hero-wrapper">
+        <div class="hero-steps-image">
+            <picture class="image-card-picture">
+                <source media="(min-width: 1200px)" srcset="/vanilla-app-template/assets/kitchen-woman-CDJpTTYD.webp 1x, /vanilla-app-template/assets/kitchen-woman@2x-CVPnYLfb.webp 2x" type="image/webp" />
+                <source media="(min-width: 768px)" srcset="/vanilla-app-template/assets/kitchen-woman-tab-96TL_Wpu.webp 1x, /vanilla-app-template/assets/kitchen-woman-tab@2x-CDJcB_F0.webp 2x" type="image/webp" />
+                <source srcset="/vanilla-app-template/assets/kitchen-woman-mob-Dq3pSl6L.webp 1x, /vanilla-app-template/assets/kitchen-woman-mob@2x-BGCsAlDW.webp 2x" type="image/webp" />
+                <img src="/vanilla-app-template/assets/kitchen-woman-mob-Dq3pSl6L.webp" alt="Preparing make smoothie" />
+            </picture>
+        </div>
+        <div class=" hero-steps-content-wrapper">
+            <div class="hero-steps-content">
+                <h2 class="hero-steps-title">
+                    TO ORDER YOUR <span class="hero-color">VEGETABLE</span> BASKET, SIMPLY FOLLOW THESE <span
+                        class="hero-color">EASY STEPS</span>
+
+                </h2>
+
+                <p class="hero-steps-text">
+                    Our baskets are assembled with care and delivered straight to your doorstep, so you can enjoy the
+                    taste
+                    of fresh fruit
+                    without ever leaving your home.
+                </p>
+            </div>
+
+            <div class="hero-steps-list-wrapper">
+                <ol class="hero-steps-list">
+                    <li class="hero-step">
+                        <span class="hero-step-number"></span>
+                        <p class="hero-list-text">Just choose <span class="hero-span-word">the vegetable</span> you
+                            want to
+                            order
+                            by clicking on the
+                            checkboxes <span class="hero-span-word">next to it.</span></p>
+                    </li>
+                    <li class="hero-step">
+                        <span class="hero-step-number"></span>
+                        <p class="hero-list-text">Click on <span class="hero-span-word">the basket</span> and fill
+                            out the
+                            form.
+                        </p>
+                    </li>
+                    <li class="hero-step">
+                        <span class="hero-step-number"></span>
+                        <p class="hero-list-text">Sit back and relax! Your <span class="hero-span-word">fresh
+                                vegetables</span>
+                            basket will
+                            delivered.
+                        </p>
+                    </li>
+                </ol>
+            </div>
+
+        </div>
+    </div>
+
+</section>
+    <section class="advert-section">
+    <div class="container">
+        <h2 class="visually-hidden">Discount Promotion</h2>
+        <div class="advert-content">
+            <p class="advert-discount-text">
+                <span class="span-advert-text">DISCOUNT UP TO 40%!</span>
+                <span class="advert-main-text">TASTE THE VITAMINS AND KEEP YOUR HEALTH</span>
+            </p>
+        </div>
+    </div>
+</section>
+    <section id="vegetables" class="vegy-section">
+    <div class="container">
+        <div class="vegy-text-container">
+            <h2 class="vegy-title">
+                ORGANIC <span class="span-vegy-title">VEGETABLE</span>
+            </h2>
+            <p class="vegy-descr">
+                Our organic vegetables are hand-picked from local farms and delivered straight to your
+                doorstep, ensuring that you get the freshest and most nutritious produce possible.
+            </p>
+        </div>
+        <div class="vegy-product-container">
+            <ul class="vegy-product-list">
+                <li class="vegy-item">
+                    <h3 class="vegy-name">EGGPLANT</h3>
+                    <p class="vegy-price">60 USD / kg</p>
+                    <img class="vegy-image" src="/vanilla-app-template/assets/eggplant-mob-BeRgaYbS.webp" alt="eggplant" width="280"
+                        height="240" />
+                </li>
+                <li class="vegy-item">
+                    <h3 class="vegy-name">LEEK</h3>
+                    <p class="vegy-price">50 USD / kg</p>
+                    <img class="vegy-image" src="/vanilla-app-template/assets/leek-mob-CmMluRmr.webp" alt="leek" width="280" height="240" />
+                </li>
+                <li class="vegy-item">
+                    <h3 class="vegy-name">MUSHROOMS</h3>
+                    <p class="vegy-price">40 USD / kg</p>
+                    <img class="vegy-image" src="/vanilla-app-template/assets/mushrooms-mob-B7SlaQG0.webp" alt="mushrooms" width="280"
+                        height="240" />
+                </li>
+                <li class="vegy-item">
+                    <h3 class="vegy-name">CORN</h3>
+                    <p class="vegy-price">60 USD / kg</p>
+                    <img class="vegy-image" src="/vanilla-app-template/assets/corn-mob-BZDlc4xS.webp" alt="corn" width="280" height="240" />
+                </li>
+                <li class="vegy-item">
+                    <h3 class="vegy-name">SWEET POTATOES</h3>
+                    <p class="vegy-price">50 USD / kg</p>
+                    <img class="vegy-image" src="data:image/webp;base64,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" alt="sweet potatoes" width="280"
+                        height="240" />
+                </li>
+                <li class="vegy-item">
+                    <h3 class="vegy-name">CARROT</h3>
+                    <p class="vegy-price">40 USD / kg</p>
+                    <img class="vegy-image" src="/vanilla-app-template/assets/carrot-mob-D4GKQc7K.webp" alt="carrot" width="280" height="240" />
+                </li>
+            </ul>
+        </div>
+    </div>
+</section>
+    <section id="reviews" class="reviews">
   <div class="container">
-    <ul class="badges-list">
-      <li class="badges-item">
-        <a
-          class="badges-link"
-          href="https://www.npmjs.com/package/vite-plugin-html-inject"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          HTML Inject
-        </a>
+    <div class="reviews-header">
+      <h2 class="reviews-header-title">
+        <span class="reviews-title-first-line">REVIEWS FROM</span>
+        <span class="reviews-title-second-line">OUR <span class="reviews-title-customers">CUSTOMERS</span></span>
+      </h2>
+
+      <p>
+        Words of our customers: impressions and opinions about the quality of our
+        services and the freshness of our products.
+      </p>
+    </div>
+
+    <ul class="reviews-list">
+      <li class="review-card">
+        <picture>
+          <img src="../img/webp/john-wax.webp" alt="John Wax" width="56" height="56" loading="lazy" />
+        </picture>
+
+        <h3>JOHN WAX</h3>
+
+        <p>
+          These vegetables are my secret to delicious and healthy meals. The
+          quality is always at the highest level, the aroma and taste are
+          enchanting. I advise every fan of real products!
+        </p>
       </li>
-      <li class="badges-item">
-        <a
-          class="badges-link"
-          href="https://www.npmjs.com/package/vite-plugin-full-reload"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Full Reload
-        </a>
+
+      <li class="review-card">
+        <picture>
+          <img src="../img/webp/victoria-romashenko.webp" alt="Victoria Romashenko" width="64" height="64"
+            loading="lazy" />
+        </picture>
+
+        <h3>VICTORIA ROMASHENKO</h3>
+
+        <p>
+          I love how fast and fresh the vegetables are delivered. Salads always
+          turn out so appetizing, and soups are real masterpieces. The quality
+          is impeccable!
+        </p>
       </li>
-      <li class="badges-item">
-        <a
-          class="badges-link"
-          href="https://www.npmjs.com/package/postcss-sort-media-queries"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Sort Media Queries
-        </a>
+
+      <li class="review-card">
+        <picture>
+          <img src="../img/webp/ihor-trachuk.webp" alt="Ihor Trachuk" width="64" height="64" loading="lazy" />
+        </picture>
+
+        <h3>IHOR TRACHUK</h3>
+
+        <p>
+          Recently tried my fresh tomatoes and peppers - amazing!The
+          authenticity of the taste, as if from the garden directly to my
+          table.It is now my main vegetable supplier.
+        </p>
+
       </li>
+
     </ul>
+
   </div>
-</article>
-
-    </main>
-
-    <footer class="footer">
+</section>
+    <section class="your-order-section">
   <div class="container">
-    <p class="footer-desc">
-      Made with ✨ by
-      <a
-        class="footer-link"
-        href="https://goit.global/ua/"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        GoIT team
-      </a>
-    </p>
+    <div class="your-order-container">
+      <h2 class="your-order-title">
+        FRESH <span>HARVEST</span> BOX HAS GOT YOU COVERED
+      </h2>
+      <p class="your-order-text">
+        Our boxes are packed with delicious, nutritious vegetables, perfect for
+        anyone looking to eat healthier or support local farmers. Order your box
+        today and start enjoying the best that nature has to offer!
+      </p>
+    </div>
+    <div class="your-order-wrapper">
+      <div class="your-order-content">
+        <h3 class="form-title">
+          ORDERING <span class="accent-brand">FROM US</span> IS QUICK AND EASY!
+          FILL OUT <span class="accent-green">THE FORM</span> BELOW AND WE WILL
+          CONTACT YOU!
+        </h3>
+        <form class="order-form">
+          <div class="form-input-wrapper">
+            <input type="text" name="user-name" placeholder="Full Name" required />
+            <input type="email" name="user-email" placeholder="Email" required
+              pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" class="email-input" />
+            <textarea name="user-comment" placeholder="Comment" required></textarea>
+          </div>
+          <button type="submit" class="order-send-btn">SEND</button>
+        </form>
+      </div>
+
+      <div class="order-image-card">
+        <div class="image-card">
+          <picture class="image-card-picture">
+            <source media="(min-width: 1200px)" srcset="/vanilla-app-template/assets/make-lemon-smoothie-TZeXm5dM.webp 1x, /vanilla-app-template/assets/make-lemon-smoothie@2x-BTLHEyoN.webp 2x" type="image/webp" />
+            <source media="(min-width: 768px)" srcset="/vanilla-app-template/assets/make-lemon-smoothie-tab-B5JLDmMi.webp 1x, /vanilla-app-template/assets/make-lemon-smoothie-tab@2x-BJNKx6G-.webp 2x" type="image/webp" />
+            <source srcset="/vanilla-app-template/assets/make-lemon-smoothie-mob-BhrFEoPm.webp 1x, /vanilla-app-template/assets/make-lemon-smoothie-mob@2x-COxSufgA.webp 2x" type="image/webp" />
+            <img src="/vanilla-app-template/assets/make-lemon-smoothie-mob-BhrFEoPm.webp" alt="Preparing juice" />
+          </picture>
+        </div>
+
+        <p class="social-text">Follow us on our social networks:</p>
+        <ul class="order-social-links">
+          <li>
+            <a href="https://www.instagram.com/goit.turkiye/" target="_blank">INSTAGRAM</a>
+          </li>
+          <li>/</li>
+          <li>
+            <a href="https://www.facebook.com/people/GOIT-Türkiye/61558036560161/" target="_blank">FACEBOOK</a>
+          </li>
+          <li>/</li>
+          <li>
+            <a href="https://m.youtube.com/@GoITTurkey" target="_blank">YOUTUBE</a>
+          </li>
+        </ul>
+      </div>
+    </div>
   </div>
+</section>
+  </main>
+  <footer class="footer">
+    <div class="container">
+        <div class="footer-inner">
+            <div class="footer-brand">
+                <div class="footer-logo">
+                    <svg class="footer-logo-panel">
+                        <use href="../img/favicon.svg#icon-panel"></use>
+                    </svg>
+
+                    <svg class="footer-logo-text">
+                        <use class="mob-logo" href="../img/favicon.svg#icon-green-harvest-mob"></use>
+                        <use class="desk-logo" href="../img/favicon.svg#icon-green-harvest-desk"></use>
+                    </svg>
+                </div>
+                <p class="footer-desc">
+                    Whether you're looking for a healthy
+                    snack or a thoughtful gift, our fruit
+                    baskets are the perfect choice.
+                </p>
+            </div>
+
+
+            <div class="footer-right">
+                <nav class="footer-nav">
+                    <ul class="footer-nav-list">
+                        <li class="footer-nav-item">
+                            <a href="#how-it-works">HOW IT WORKS</a>
+                        </li>
+                        <li class="footer-nav-item">
+                            <a href="#vegetables">VEGETABLES</a>
+                        </li>
+                        <li class="footer-nav-item">
+                            <a href="#reviews">REVIEWS</a>
+                        </li>
+                    </ul>
+                </nav>
+
+
+                <address class="footer-contact">
+                    <a class="footer-phone" href="tel:+380684439426">
+                        +380 (68) 443-94-26</a>
+                    <a class="footer-address" href="#">
+                        1678 S. Pioneer Road Salt
+                        Lake City UT 84104
+                    </a>
+                </address>
+            </div>
+            <div class="footer-bottom">
+                <div class="footer-links">
+                    <a href="#">Privacy Policy</a>
+                    <span>/</span>
+                    <a href="#">Cookie settings</a>
+                </div>
+
+                <p class="footer-copyright"> &copy;Green Harvest 2023</p>
+            </div>
+
+
+        </div>
+    </div>
 </footer>
+</body>
 
-
-  </body>
 </html>
