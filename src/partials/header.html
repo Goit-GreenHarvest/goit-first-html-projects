@@ -1,19 +1,64 @@
 <header class="header">
   <div class="container">
-    <nav class="nav">
-      <a class="nav-logo" href="./index.html" aria-label="Site logo">
-        <svg class="nav-logo-icon" width="100" height="30">
-          <use href="{=$icon-path}"></use>
+    <div class="header-container">
+      <div class="header-logo">
+        <svg class="header-logo-panel">
+          <use href="../img/favicon.svg#icon-panel"></use>
         </svg>
-      </a>
-      <ul class="nav-list">
-        <li class="nav-item">
-          <a class="nav-link {=$highlight-act}" href="./page-2.html">Page 2</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link {=$highlight-curr}" href="./page-3.html">Page 3</a>
-        </li>
-      </ul>
-    </nav>
+        <svg class="header-logo-text">
+          <use class="mob-logo" href="../img/favicon.svg#icon-green-harvest-mob"></use>
+          <use class="desk-logo" href="../img/favicon.svg#icon-green-harvest-desk"></use>
+        </svg>
+      </div>
+
+      <div class="header-button-group">
+        <nav>
+          <ul class="header-nav-group">
+            <li>
+              <a href="#how-it-works" class="header-nav-buttons">How It Works</a>
+            </li>
+            <li>
+              <a href="#vegetables" class="header-nav-buttons">Vegetables</a>
+            </li>
+            <li>
+              <a href="#reviews" class="header-nav-buttons">Reviews</a>
+            </li>
+          </ul>
+        </nav>
+        <a class="header-primary-button" href="#">SHOP NOW</a>
+      </div>
+
+      <input type="checkbox" id="menu-toggle" class="menu-checkbox" hidden />
+
+      <label for="menu-toggle" class="burger-open">
+        <svg class="burger-icon">
+          <use href="./img/favicon.svg#icon-hamburger"></use>
+        </svg>
+      </label>
+
+      <div class="mobile-menu-wrapper">
+        <div class="mobile-menu-content">
+          <label for="menu-toggle" class="close-label">
+            <svg class="close-icon" width="40" height="40">
+              <use href="./img/favicon.svg#icon-close"></use>
+            </svg>
+          </label>
+          <nav class="mobile-menu-nav">
+            <ul class="mobile-menu-list">
+              <li class="mobile-menu-item active">
+                <a href="#how-it-works" class="mobile-menu-link">How It Works</a>
+              </li>
+              <li class="mobile-menu-item">
+                <a href="#vegetables" class="mobile-menu-link">Vegetables</a>
+              </li>
+              <li class="mobile-menu-item">
+                <a href="#reviews" class="mobile-menu-link">Reviews</a>
+              </li>
+            </ul>
+          </nav>
+          <button type="button" class="menu-shop-button">SHOP NOW</button>
+        </div>
+      </div>
+    </div>
   </div>
 </header>

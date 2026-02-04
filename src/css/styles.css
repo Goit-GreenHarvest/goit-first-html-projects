@@ -4,15 +4,18 @@
   | default @import url()
   |============================
 */
+
 /* Common styles */
-@import url('./reset.css');
-@import url('./base.css');
-@import url('./container.css');
-@import url('./animations.css');
+@import 'modern-normalize';
+@import './base.css'; /* Genel body, font ve renk tanımları */
+@import './container.css'; /* Sayfa genişliğini (max-width) belirler */
 
 /* Sections style */
-@import url('./header.css');
-@import url('./vite-promo.css');
-@import url('./badges.css');
-@import url('./back-link.css');
-@import url('./footer.css');
+@import './header.css'; /* Header & Mobile Menu */
+@import './hero.css'; /* Giriş Alanı */
+@import './advertisement.css'; /* Tanıtım / Banner */
+@import './vegetables.css'; /* Ürün Listesi */
+@import './reviews.css'; /* Müşteri Yorumları */
+@import './your-order.css'; /* Sipariş Formu */
+@import './mobile-menu.css'; /* Mobile-Menu */
+@import './footer.css'; /* Alt Bilgi */
